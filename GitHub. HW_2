@@ -1,19 +1,66 @@
 GitHub. HW_2
 1. На локальном репозитории сделать ветки для:
-- Postman
-- Jmeter
-- CheckLists
-- Bag Reports
-- SQL
-- Charles
-- Mobile testing
+- Postman  */git checkout -b Postman (делаем изменения что нам нужны )
+             git add .
+             git commit -m"add new branch Postman"
+             git checkout main
+- Jmeter  */ git checkout -b Jmeter(делаем изменения что нам нужны )
+             git add .
+             git commit -m"add new branch Jmeter"
+             git checkout main
+- CheckLists  */ git checkout -b CheckLists(делаем изменения что нам нужны )
+                 git add .
+                 git commit -m"add new branch CheckLists"
+                 git checkout main
+- Bag Reports */ git checkout -b BagReports(делаем изменения что нам нужны )
+                 git add .
+                 git commit -m"add new branch BagReports"
+                 git checkout main
+- SQL    */ git checkout -b SQL(делаем изменения что нам нужны )
+                 git add .
+                 git commit -m"add new branch SQL"
+                 git checkout main
+- Charles  */ git checkout -b Charles (делаем изменения что нам нужны )
+                 git add .
+                 git commit -m"add new branch Charles"
+                 git checkout main
+- Mobile testing */ git checkout -b MobileTesting
+                 git add .
+                 git commit -m"add new branch MobileTesting"
+                 git checkout main
 
-2. Запушить все ветки на внешний репозиторий
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+2. Запушить все ветки на внешний репозиторий */git push origin --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта 
+*/ cat > BagReports.txt
+Структура баг репорта:
+Шапка:
+Cntl+C
+
 4. Запушить структуру багрепорта на внешний репозиторий
-5. Вмержить ветку Bag Reports в Main
+*/ git add . 
+git commit -m"add BagReports" 
+git push origin BagReports
+
+5. Вмержить ветку Bag Reports в Main 
+*/ git checkout main
+git merge BagReports
+
 6. Запушить main на внешний репозиторий.
+*/git push origin main
+
 7. В ветке CheckLists набросать структуру чек листа.
+git checkout CheckLists 
+cat > CheckLists.txt
+Раздел «Заголовок»:
+Шапка:
+Cntl+C
+
 8. Запушить структуру на внешний репозиторий
+*/ git add . 
+git commit -m"check list structure" 
+git push origin CheckLists
+
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-10. Синхронизировать Внешнюю и Локальную ветки Main
+
+10. Синхронизировать Внешнюю и Локальную ветки Main */ git pull
